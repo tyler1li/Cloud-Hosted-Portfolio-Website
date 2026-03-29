@@ -9,10 +9,15 @@ The site is hosted at: tylerinthecloud.com
 ## Technologies Used
 
 -Amazon S3 – Static website hosting
+
 -Amazon CloudFront – CDN for global content delivery and HTTPS
+
 -Amazon Route 53 – Domain registration and DNS management
+
 -AWS Certificate Manager (ACM) – SSL/TLS certificate provisioning
+
 -HTML / CSS / JavaScript – Front-end customization
+
 -Formspree – Contact form email handling
 
 
