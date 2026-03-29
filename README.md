@@ -1,12 +1,19 @@
 # Cloud Portfolio Website
 
-This is a web application for a unicorn ride-sharing service called **Wild Rydes**, based on a tutorial created by "Tiny Technical Tutorials" on YouTube [https://www.youtube.com/watch?v=K6v6t5z6AsU&t=135s&ab_channel=TinyTechnicalTutorials). This project was completed as a hands-on exercise to learn how to build and deploy a full-stack serverless app on AWS using real-world services.
+This project is a cloud-hosted portfolio website built and deployed on AWS, designed to showcase my projects and hands-on experience in cloud and security.
+
+The site is hosted at: tylerinthecloud.com
 
 ---
 
 ## Technologies Used
 
-- **AWS S3**
+-Amazon S3 – Static website hosting
+-Amazon CloudFront – CDN for global content delivery and HTTPS
+-Amazon Route 53 – Domain registration and DNS management
+-AWS Certificate Manager (ACM) – SSL/TLS certificate provisioning
+-HTML / CSS / JavaScript – Front-end customization
+-Formspree – Contact form email handling
 
 
 ---
@@ -14,10 +21,15 @@ This is a web application for a unicorn ride-sharing service called **Wild Rydes
 ## WHAT WAS DONE
 
 
-• Architected and deployed a secure static website using AWS services, leveraging S3 for hosting, CloudFront for content delivery, Route 53 for DNS, and AWS Certificate Manager for HTTPS encryption.
-• Configured bucket policies and access controls following least-privilege principles, ensuring secure object access via Origin Access Control (OAC) and private S3 permissions.
-• Integrated Formspree.io for client-side email submissions and implemented a downloadable résumé feature to enhance interactivity while maintaining a secure front-end design.
-
+-Architected and deployed a serverless static website using AWS core services
+-Configured Amazon S3 for static hosting with secure bucket policies
+-Implemented CloudFront distribution to enable HTTPS and improve performance via edge caching
+-Integrated AWS Certificate Manager (ACM) for secure SSL/TLS encryption
+-Configured Route 53 DNS records to route traffic from a custom domain to CloudFront
+-Applied least-privilege access controls using private S3 buckets and Origin Access Control (OAC)
+-Customized a front-end template using HTML/CSS/JavaScript to create a professional portfolio
+-Integrated Formspree for secure client-side contact form submissions
+-Added a downloadable resume functionality for improved recruiter accessibility
 
 
 
@@ -25,12 +37,26 @@ This is a web application for a unicorn ride-sharing service called **Wild Rydes
 
 ## What I Learned
 
--
+-How to design and deploy a scalable, serverless web architecture on AWS
+-Differences between direct S3 hosting vs CloudFront distribution
+-DNS routing concepts and troubleshooting with Route 53
+-SSL/TLS certificate validation and HTTPS configuration using ACM
+-Importance of securing S3 origins and preventing public access
+-Debugging real-world issues such as:
+-404 errors (NoSuchKey) from incorrect object paths
+-DNS propagation delays
+-CloudFront caching and invalidation behavior
 
 ---
 
 ## Notes
 
-- 
+- Focus was placed on security, performance, and real-world deployment practices rather than just basic functionality
+  
+-Future improvements may include:
+  Implementing Infrastructure as Code (IaC) using tools like AWS CloudFormation or Terraform to automate provisioning of S3, CloudFront, Route 53, and ACM resources
+  Adding backend functionality using AWS Lambda and API Gateway
+  Implementing authentication/authorization with Amazon Cognito
+  Enhancing security with logging and monitoring (e.g., CloudTrail, WAF)
 
 ---
